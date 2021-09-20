@@ -18,40 +18,122 @@ Descripciones: 16px
 
 /*MOBILE*/
 
-@media (max-width: 361px) {
+@media (min-width: 360px){
+    main article{
+        width: 100%;
+    }
+
     main .description {
         display: none;
     }
+
     header nav {
         display: none;
     }
+
     footer article p {
         padding: 0 20%;
+    }
+
+    header #logo{
+        width:50%;
+    }
+
+    header #search-bar{
+        width:50%;
+    }
+
+    header #cuotas-text{
+        width: 100%;
     }
 }
 
 
-/*TABLET AND DESKTOP*/
+/*TABLET*/
 
-@media (min-width: 769px) {
+@media (min-width: 768px){
+
+
     header .burger-menu {
         display: none;
     }
+
+    header #cuotas-text{
+        width: 30%;
+    }
+
+    header #logo{
+        width:30%;
+    }
+
+    header #search-bar{
+        width:30%;
+    }
+
+    header nav {
+        display: block;
+        font-size: 0.7rem;
+    }
+    
+    header nav ul li{
+        margin: 0 1.5rem;
+    }
+
     main article {
         box-shadow: 0 0 10px rgb(100, 100, 100);
+        width: 45%;
     }
+
     footer article p {
         padding: 0 44%;
+    }
+
+}
+
+/*DESKTOP*/
+
+@media (min-width: 1024px){
+    main article {
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+        width: 20%;
+    }
+
+    header nav{
+        font-size: 1rem;
+    }
+
+    header nav ul li{
+        margin: 0 2rem;
     }
 }
 
 * {
     font-family: Roboto, sans-serif;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 header {
     background-color: #EAC926;
+}
+
+header #logo-search-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header #search-bar{
+    height: 2rem;
+    background-color: white;
+    border: solid 0.5px black;
+    color: #666;
+}
+
+header #cuotas-text{
+    text-align: center;
 }
 
 header .burger-menu {
@@ -67,17 +149,22 @@ header .burger-menu .fas {
     margin: 1em 0 1em;
 }
 
-header .search-bar {
-    background-color: white;
-    border: solid 0.5px black;
-    color: #666;
+header #nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+
 }
 
-header ul {
+header nav{
+    margin: 1rem 0 1rem;
+}
+
+header nav ul {
     list-style: none;
+    display: flex;
 }
 
-header ul a {
+header nav ul a {
     text-decoration: none;
     color: black;
 }
@@ -92,13 +179,21 @@ main {
     width: 90vw;
 }
 
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 main article {
     margin-bottom: 10px;
+    position: relative;
 }
 
 main h2 {
     font-size: 24px;
     color: #666;
+    margin: 2rem 0;
 }
 
 main .product {
@@ -115,23 +210,40 @@ main .product-desc {
     padding: 15px;
 }
 
+main .box-price{
+    display: flex;
+    justify-content: flex-start;
+}
+
 main .price {
     font-size: 18px;
+    width: 30%;
 }
 
-main .discount,
-.description {
+main .description {
     font-size: 16px;
+    color: #666;
 }
 
-main .discount,
-main i {
+main .discount{
     color: #39b54a;
+    font-size: 16px;
+    width: 70%;
 }
 
-main i {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+main section article i {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
 }
 
 footer section {
