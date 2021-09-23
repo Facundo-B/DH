@@ -85,7 +85,7 @@ Descripciones: 16px
     }
 
     footer article p {
-        padding: 0 44%;
+        padding: 0 20%;
     }
 
 }
@@ -104,6 +104,10 @@ Descripciones: 16px
 
     header nav ul li{
         margin: 0 2rem;
+    }
+
+    footer article p {
+        padding: 0 44%;
     }
 }
 
