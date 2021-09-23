@@ -80,7 +80,7 @@ Descripciones: 16px
     }
 
     main article {
-        box-shadow: 0 0 10px rgb(100, 100, 100);
+        box-shadow: 0 0 0px rgb(100, 100, 100);
         width: 45%;
     }
 
@@ -94,8 +94,13 @@ Descripciones: 16px
 
 @media (min-width: 1024px){
     main article {
-        box-shadow: 0 0 10px rgb(100, 100, 100);
+        box-shadow: 0 0 0px rgb(100, 100, 100);
         width: 20%;
+        transition: box-shadow 0.3s;
+    }
+
+    main article:hover{
+        box-shadow: 0 0 10px rgb(100, 100, 100);
     }
 
     main article .description{
