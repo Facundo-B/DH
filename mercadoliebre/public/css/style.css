@@ -45,8 +45,9 @@ Descripciones: 16px
     }
 
     header #search-bar{
-        width:50%;
+        width:30%;
     }
+    
 
     header #cuotas-text{
         width: 100%;
@@ -160,6 +161,11 @@ header #search-bar{
     background-color: white;
     border: solid 0.5px black;
     color: #666;
+    border-radius: 7px;
+}
+
+header i{
+    margin-right: 1rem;
 }
 
 header #cuotas-text{
