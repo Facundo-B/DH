@@ -134,9 +134,7 @@ Descripciones: 16px
         flex-direction: row;
     }
 
-    footer section i:hover{
-        color: #EAC926;
-    }
+
 }
 
 * {
@@ -298,6 +296,10 @@ footer #copyright {
 footer i {
     transition: color 0.5s;
     color: #1259c3;
+}
+
+footer section i:hover{
+    color: #EAC926;
 }
 
 footer .fas {
