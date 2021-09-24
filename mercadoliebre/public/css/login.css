@@ -61,6 +61,11 @@ form button{
     color: white;
     font-weight: 600;
     font-size: medium;
+    transition: background-color 1s;
+}
+
+form button:hover{
+    background-color: #0022AA
 }
 
 @media (min-width: 360px) and (max-width: 500px){
