@@ -263,6 +263,11 @@ main section article i {
     position: absolute;
     right: 20px;
     bottom: 40px;
+    transition: transform 2s;
+}
+
+main section article i:hover{
+    transform: rotate(-90deg)
 }
 
 footer section {
