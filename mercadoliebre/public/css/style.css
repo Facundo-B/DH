@@ -35,6 +35,11 @@ Descripciones: 16px
         padding: 0 20%;
     }
 
+    footer section{
+        display: flex;
+        flex-direction: column;
+    }
+
     header #logo{
         width:50%;
     }
@@ -121,9 +126,17 @@ Descripciones: 16px
     }
 
     footer article p {
-        padding: 0 44%;
+        padding: 0 20%;
     }
 
+    footer section{
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer section i:hover{
+        color: #EAC926;
+    }
 }
 
 * {
@@ -283,6 +296,7 @@ footer #copyright {
 }
 
 footer i {
+    transition: color 0.5s;
     color: #1259c3;
 }
 
